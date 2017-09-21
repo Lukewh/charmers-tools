@@ -1,6 +1,12 @@
 body {
     background: #f7f7f7;
 }
+
+*+[class*="-svg"],
+.desktop-bg {
+    margin-top: 0;
+}
+
 .overlay {
     position: absolute;
     top: 10%;
