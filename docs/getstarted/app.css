@@ -13,8 +13,8 @@
 
 .input-overlay-hide {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    bottom: 10px;
+    left: 18px;
 }
 
 .input-overlay-hide + .p-card--highlighted {
