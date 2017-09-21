@@ -1,0 +1,142 @@
+.overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+}
+
+.try-it-button {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.input-overlay-hide {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.input-overlay-hide + .p-card--highlighted {
+    margin-top: 0;
+}
+
+.left-svg {
+    background: url('./left.svg') top left no-repeat;
+    background-size: 476px auto;
+    top: 10px;
+    left: 18px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.right-svg {
+    background: url('./right.svg') top right no-repeat;
+    background-size: 356px auto;
+    top: 10px;
+    right: 18px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin-top: 0;
+}
+
+.bundle-svg {
+    background: url('./bundle.svg') center no-repeat;
+    background-size: 362px auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.deploy-svg {
+    background: url('./deploy.svg') bottom right no-repeat;
+    background-size: 136px auto;
+    top: 0;
+    right: 18px;
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+}
+
+.md-text {
+    height: 300px;
+}
+
+.panel-component {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 4.85px .15px rgba(0, 0, 0, .2);
+}
+.panel-component__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-deployment {
+    max-height: calc(100% - 140px - 166px);
+    z-index: 1;
+    width: auto;
+    max-width: 295px;
+    left: auto;
+    right: 20px;
+    top: 166px;
+    height: auto;
+    padding: 20px;
+    overflow: auto;
+    line-height: 1.3125rem;
+}
+
+.post-deployment .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.post-deployment .md-content {
+    margin-top: 0;
+}
+
+.post-deployment p,
+.post-deployment li,
+.post-deployment a,
+.post-deployment .link {
+  font-size: .875rem;
+}
+.post-deployment ul,
+.post-deployment ol {
+    margin-top: 1rem;
+}
+
+.post-deployment a,
+.post-deployment .link {
+  color: #007aa6;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.post-deployment h1 {
+  font-size: 1rem;
+  margin-right: 24px;
+}
+
+.post-deployment h2 {
+  font-size: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #cdcdcd;
+}
+
+@media screen and (min-width: 1441px) {
+.post-deployment  {
+    max-width: 395px;
+  }
+}
