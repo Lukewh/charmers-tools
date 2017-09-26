@@ -87,13 +87,13 @@ body {
 }
 
 .post-deployment {
-    max-height: calc(100% - 140px - 166px);
+    max-height: calc(100% - 140px - 146px);
     z-index: 1;
     width: auto;
     max-width: 295px;
     left: auto;
     right: 20px;
-    top: 166px;
+    top: 146px;
     height: auto;
     padding: 20px;
     overflow: auto;
