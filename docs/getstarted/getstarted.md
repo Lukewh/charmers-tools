@@ -1,4 +1,4 @@
-# Guide to writing you charm’s getstarted.md
+# Guide to writing you charm/ bundle’s getstarted.md
 
 **Title** (shortest recognisable form)  
 
