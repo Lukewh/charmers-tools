@@ -7,19 +7,6 @@
     const showHideInput = document.querySelector('.input-overlay-hide');
     const charm = window.location.search.split('?').join('');
 
-    if (charm) {
-        tryItOverlay.classList.add('u-hide');
-        inputOverlay.classList.remove('u-hide');
-        postDeploymentHolder.classList.remove('u-hide');
-        showHideInput.classList.remove('u-hide');
-
-        fetch(`https://raw.githubusercontent.com/lukewh/charmers-tools/docs/getstarted/examples/${charm}.md`).then(
-            (data) => {
-                console.log(data);
-            }
-        );
-    }
-
     tryItButton.addEventListener('click', function(e) {
         e.preventDefault();
 
@@ -121,4 +108,21 @@
     };
 
     var postDeployment = new PostDeployment(mdInput, document.querySelector('.md-content'));
+
+    if (charm) {
+        fetch(`https://raw.githubusercontent.com/Lukewh/charmers-tools/master/docs/getstarted/examples/${charm}.md`).then(
+            response => {
+                return response.text();
+            }
+        ).then(content => {
+            tryItOverlay.classList.add('u-hide');
+            inputOverlay.classList.remove('u-hide');
+            postDeploymentHolder.classList.remove('u-hide');
+            showHideInput.classList.remove('u-hide');
+
+            mdInput.innerHTML = content;
+
+            postDeployment.update();
+        });
+    }
 })();

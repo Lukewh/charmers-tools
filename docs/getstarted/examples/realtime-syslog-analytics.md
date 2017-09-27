@@ -1,6 +1,6 @@
 # Realtime Syslog Analytics
 
-A six-unit big data cluster that includes Hadoop 2.7.3. It provides an environment for analysing syslog events in Apache Zeppelin web notebooks. {link_details}
+A six-unit big data cluster that includes Hadoop 2.7.3. It provides an environment for analysing syslog events in Apache Zeppelin web notebooks. {details_link}
 
 **Requires**: {requires_cli_link}
 

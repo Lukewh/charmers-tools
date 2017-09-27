@@ -1,6 +1,6 @@
 # Nagios
 
-Nagios provides basic monitoring for hosts, services, and networks. It checks for working ping and SSH. {link_details}
+Nagios provides basic monitoring for hosts, services, and networks. It checks for working ping and SSH. {details_link}
 
 **Requires**: {requires_cli_link}
 
