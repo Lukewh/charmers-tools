@@ -1,10 +1,24 @@
 ;(function(){
-    var tryItOverlay = document.querySelector('.try-it-overlay');
-    var inputOverlay = document.querySelector('.input-overlay');
-    var tryItButton = document.querySelector('.try-it-button');
-    var mdInput = document.querySelector('.md-text');
-    var postDeploymentHolder = document.querySelector('.post-deployment');
-    var showHideInput = document.querySelector('.input-overlay-hide');
+    const tryItOverlay = document.querySelector('.try-it-overlay');
+    const inputOverlay = document.querySelector('.input-overlay');
+    const tryItButton = document.querySelector('.try-it-button');
+    const mdInput = document.querySelector('.md-text');
+    const postDeploymentHolder = document.querySelector('.post-deployment');
+    const showHideInput = document.querySelector('.input-overlay-hide');
+    const charm = window.location.search.split('?').join('');
+
+    if (charm) {
+        tryItOverlay.classList.add('u-hide');
+        inputOverlay.classList.remove('u-hide');
+        postDeploymentHolder.classList.remove('u-hide');
+        showHideInput.classList.remove('u-hide');
+
+        fetch(`https://raw.githubusercontent.com/lukewh/charmers-tools/docs/getstarted/examples/${charm}.md`).then(
+            (data) => {
+                console.log(data);
+            }
+        );
+    }
 
     tryItButton.addEventListener('click', function(e) {
         e.preventDefault();
